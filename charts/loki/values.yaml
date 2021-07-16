@@ -93,6 +93,7 @@ config:
       port: 10350
       auth: true
       keyspace: lokiindex
+      SSL: true
     filesystem:
       directory: /data/loki/chunks
   chunk_store_config:
