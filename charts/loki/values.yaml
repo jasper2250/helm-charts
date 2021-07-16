@@ -88,7 +88,7 @@ config:
     #   shared_store: filesystem
     cassandra:
       username: loki-db
-      password: VqBLpS8FpUyvYhHoHafXLTy3igJPHC0ttY7m9TOaCcQyKOgC74AQwbxiCf0xnTMMcefwAC24pGazsjsWQv7Ajw==
+      password: 
       addresses:  loki-db.cassandra.cosmos.azure.com
       port: 10350
       auth: true
