@@ -155,6 +155,8 @@ persistence:
   # subPath: ""
   existingClaim: loki-data
   azurefile:
+    shareName: loki
+    size: 15Gi
     name: 
     password: 
 

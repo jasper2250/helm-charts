@@ -13,13 +13,13 @@ metadata:
   name: loki-data
 spec:
   capacity:
-    storage: 15Gi
+    storage: {{ .Values.persistence.azurefile.size }}
   accessModes:
     - ReadWriteMany
   azureFile:
     secretName: azurefile-secret
     secretNamespace: {{ .Release.Namespace }}
-    shareName: loki
+    shareName: {{ .Values.persistence.azurefile.shareName }}
     readOnly: false
   mountOptions:
   - dir_mode=0777
@@ -39,4 +39,4 @@ spec:
   storageClassName: ""
   resources:
     requests:
-      storage: 15Gi
+      storage: {{ .Values.persistence.azurefile.size }}
